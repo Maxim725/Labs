@@ -163,3 +163,18 @@ int main(void) {
 	cout << newfunt;
 	system("pause");
 }
+11)
+#include "pch.h"
+#include <iostream>
+#include <iomanip>
+#include <Windows.h>
+using namespace std;
+
+int main(void) {
+	setlocale(LC_ALL, "Rus");
+	setiosflags(ios::left);
+	cout << setiosflags(ios::left) << "Фамилия" << setw(15) << "Имя" << setw(25) << "Адрес" << setw(35) << "Город" << endl
+		 << "Петров" << setw(15) << "Василий" << setw(25) << "Кленовая16" << setw(35) << "Санкт-Петербург" << endl
+		 << "Иванов" << setw(15) << "Сергей" << setw(25) << "Осиновая3" << setw(35) << "Находка" << endl
+		 << "Сидоров" << setw(15) << "Иван" << setw(25) << "Берёзовая21" << setw(35) << "Калининград" << endl;
+}
